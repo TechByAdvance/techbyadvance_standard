@@ -17,11 +17,21 @@
         let $buttons = document.getElementsByClassName("button");
         let $message = document.getElementById("message");
 
-        for (let i = 0; i < $buttons.length; i++) {
-            $buttons[i].addEventListener("click", function() {
-                $message.innerHTML = $buttons[i].innerHTML;
-            });
-        }
+        $buttons[0].addEventListener("click", function() {
+            $message.innerHTML = $buttons[0].innerHTML;
+        });
+
+        $buttons[1].addEventListener("click", function() {
+            $message.innerHTML = $buttons[1].innerHTML;
+        });
+
+        $buttons[2].addEventListener("click", function() {
+            $message.innerHTML = $buttons[2].innerHTML;
+        });
+
+        $buttons[3].addEventListener("click", function() {
+            $message.innerHTML = $buttons[3].innerHTML;
+        });
     </script>
 </body>
 </html>
