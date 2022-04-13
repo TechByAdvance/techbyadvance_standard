@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37. フォームに入力された値の取得</title>
+</head>
+<body>
+    <input type="text" id="textbox">
+    <button id="button">クリック</button>
+    <p id="message"></p>
+
+    <script>
+        let $button = document.getElementById("button");
+        let $message = document.getElementById("message");
+        let $textbox = document.getElementById("textbox");
+
+        $button.addEventListener("click", function() {
+            $message.innerHTML = $textbox.value + "と入力されました。";
+        });
+    </script>
+</body>
+</html>

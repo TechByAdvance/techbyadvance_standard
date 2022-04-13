@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習問題 38</title>
+</head>
+<body>
+    <button class="button">ボタンA</button>
+    <button class="button">ボタンB</button>
+    <button class="button">ボタンC</button>
+    <button class="button">ボタンD</button>
+    <p id="message"></p>
+
+    <script>
+        let $buttons = document.getElementsByClassName("button");
+        let $message = document.getElementById("message");
+
+        for (let i = 0; i < $buttons.length; i++) {
+            $buttons[i].addEventListener("click", function() {
+                $message.innerHTML = $buttons[i].innerHTML;
+            });
+        }
+    </script>
+</body>
+</html>
